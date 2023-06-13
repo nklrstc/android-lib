@@ -3,16 +3,15 @@ plugins {
 }
 
 android {
-    namespace 'com.example.androidlibtest'
+    namespace 'com.example.librarytest'
     compileSdk 33
 
     defaultConfig {
         minSdk 24
         targetSdk 33
-        versionCode 1
-        versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
