@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace 'com.example.androidlibtest'
+    namespace 'com.example.libtest2'
     compileSdk 33
 
     defaultConfig {
