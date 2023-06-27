@@ -4,5 +4,3 @@ workflows:
       - name: Build Android App Bundle
         working_directory: android
         script: ./gradlew assembleDebug
-    artifacts:
-      - build/**/outputs/bundle/**/*.aab
