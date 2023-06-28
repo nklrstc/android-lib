@@ -1,6 +1,7 @@
 package com.example.libtest2;
 
 import android.content.Context;
+import android.util.Log;
 
 import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
@@ -17,10 +18,15 @@ import static org.junit.Assert.*;
  */
 @RunWith(AndroidJUnit4.class)
 public class ExampleInstrumentedTest {
+    private final String TAG = "test";
     @Test
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
         assertEquals("com.example.libtest2", appContext.getPackageName());
+    }
+
+    public void test() {
+        Log.v(TAG, "test");
     }
 }
